@@ -4,24 +4,64 @@
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<script type="text/javascript" src="script.js"></script>
 	</head>
-	<body>
+	<body onload="init()">
 		<div id="header">
-			<h1 id="title">Unilag Coding Club Registeration</h1>
+			<h1 id="title">UNILAG CODING CLUB</h1>
 		</div>
-		<div class="intro">
-				<h2>Please Enter Your Name To Continue</h2>
-		</div>
-		<div id="body">
-			<form id="name_form">
-			  <label id="name_lbl" for="name">Name</label>
-			  <input id="name_inp" type="text" id="name" name="name">
+		<div id="body" class="form" >
+			<!-- onmouseleave="enteredName()"> -->
+			<div class="intro" class="form">
+					<h2 id="info">Please Enter Your Names To Continue</h2>
+			</div>
+			<form id="name_form" id="name_form" >
+			  <label id="title_lbl" for="title_inp" >Title</label><br>
+			  <datalist id="titles">
+			    <option value="Master">
+			    <option value="Miss">
+			    <option value="Mr">
+			    <option value="Mrs">
+			  </datalist>
+			  <input class="medium_inp" id="title_inp" type="text" name="title" list="titles" required><br><br>
+			  <label id="fname_lbl" for="fname_inp" required>First name</label><br>
+			  <input class="medium_inp" id="fname_inp" type="text" name="fname"><br><br>
+			  <label id="lname_lbl" for="lname_inp" required>Last name</label><br>
+			  <input class="medium_inp" id="lname_inp" type="text" name="lname" required><br><br>
 			</form>
-			<!-- <form id="name_form">
-			  <label for="fname">Name</label>
-			  <input type="text" id="name" name="name">
-			</form> -->
 
-		</div>
+			<form id="pers_form" >
+			  <label  id="sex_lbl" for="sex_inp">Sex</label><br>
+			  <select class="select" class="medium_inp" name="Sex">
+			    <option value="male">Male</option>
+			    <option value="female">Female</option>
+			  </select><br><br>
+			  <label id="age_lbl" for="age_inp"required >Age</label><br>
+			  <input class="medium_inp" id="age_inp" type="number" name="age"><br><br>
+			  <label id="email_lbl" for="email_inp">Email</label><br>
+			  <input class="medium_inp error" id="email_inp" type="text" name="email"><br><br>
+			  <label id="phone_lbl" for="phone_inp">Phone nos</label><br>
+			  <input class="medium_inp" id="phone_inp" type="tel" name="phone"><br><br>
+			</form>
+
+			<form id="exp_form" onmouseleave="">
+			  <label  id="rate_lbl" >How much do you know?</label><br>
+			  <input type="radio"  class="radio" id="beginner_inp"  name="exp" checked>Not much<br>
+			  <input type="radio"  class="radio" id="medium_inp"  name="exp" checked>Quite<br>
+			  <input type="radio"  class="radio" id="exp_inp"  name="exp" checked>A lot<br>
+
+			  <label  id="langs_lbl" for="langs_inp">What Languages are you Familiar with?</label><br>
+			  <input type="text" class="medium_inp" id="langs_inp"  name="langs" multiple><br><br>
+
+			  <label  id="max_line_lbl" >Max. lines of code you've written</label><br>
+			  <select class="select" class="medium_inp" name="code_line">
+			    <option value="500">500</option>
+			    <option value="5000">5,000</option>
+			    <option value="10000">10,000</option>
+			    <option value="100000">100,000</option>
+			    <option value="100000000">A lot</option>
+			  </select><br><br>
+			</form>
+
+		</div>		
 
 	</body>
 </html>

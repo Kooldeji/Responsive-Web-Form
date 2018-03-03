@@ -1,6 +1,6 @@
 * {
 	font: 14px/24px Roboto, sans-serif;
-  	font-weight: 400;
+  	font-weight: 400;	
 }
 
 body{
@@ -9,22 +9,23 @@ body{
 
 #header {
 	color: white;
-	background-color: #6ab344;
-	height: 64px;
-	text-align: center;
+	/*background-color: #6ab344;*/
+	background-color: purple;	
+	height: 150px;
+	text-align: left;
 	margin:0;
-	position: sticky;
+	/*position: sticky;*/
 	top: 0;		
 }
 
 #title {
-	padding: 19px;
+	padding: 64px 32px;
 	font-size: 20px;
 	font-weight: 400;
 }
  
 input, textarea{
-    display: block;
+    /*display: block;*/
     color: grey;
     width: 500px;
     padding: 2px 5px;
@@ -42,40 +43,94 @@ textarea {
     border-left: grey solid 2px;
 }
 
-#name_form{
-	padding: 32px 16px;
-	/*height: 50%;*/
-	/*margin-top: 200px;*/
-	margin-left:  420px;
-	/*width: 50%;*/
-	display: inline-block;
-	/*text-align: center;*/
-	vertical-align: center;
-	box-shadow: 3px 4px 5px rgb(77, 77, 77), 0 0 10px rgb(77, 77, 77);
+.small_inp{
+	width: 90px;
 }
 
-#name_lbl{
-    font-size: 25px;
+.medium_inp{
+	width: 100%;
+}
+
+#name_form{
+}
+
+.form{
+	padding: 32px 16px;
+	margin: auto;
+	margin-top: -50px;
+	margin-bottom: 10px;
+	display: block;
+	box-shadow: 3px 4px 5px rgb(77, 77, 77), 0 0 10px rgb(77, 77, 77);
+	width: 500px;
+	height: 600px;
+	background-color: white;
+	border-top: solid 15px #800080b8;
+	overflow: scroll;
+	position: sticky;
+
+}
+#body::-webkit-scrollbar { 
+    display: none; 
+}
+label{
+    font-size: 20px;
     line-height: 56px;
     font-weight: 300;
     text-align: left;
+    margin-left: 10px
+
 }
 
-input:focus, textarea:focus{
+#pers_form{
+	display: none;
+}
+
+#exp_form{
+	display: none;
+}
+
+#name_lbl{
+	padding-left: 10px;
+}
+
+input textarea select{
+	margin-left: 10px;
+}
+
+.error {
+    border-color: red;
+
+}	
+
+input:focus, textarea:focus, select:focus{
     outline: none;
-    border-color: blue;
+    border-color: purple;
 }
 
 h2{	
-	/*padding: 19px;*/
-	font-size: 30px;
+	padding: 19px;
+	font-size: 25px;
 	font-weight: 400;
 }
+
+select{
+	padding: 8px 16px;
+    outline: none;
+    border: none;
+    border-bottom: solid grey 2px; 
+    width: 200px;
+}
+
+.radio{
+	font-size: 500px;
+	width: 10px;
+}
+
+
 
 .intro{
 	height: 20%;
 	text-align: center;
-	padding-top: 50px; 
+	font-weight: 600;
 }
-
 
