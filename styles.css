@@ -1,0 +1,20 @@
+* {
+	font-family: 14px/24px Roboto, sans-serif;
+}
+
+body{
+	margin: 0;
+}
+
+#header {
+	color: white;
+	background-color: #6ab344;
+	height: 64px;
+	text-align: center;
+	margin:0;
+}
+
+#title {
+	padding: 13px;
+}
+
